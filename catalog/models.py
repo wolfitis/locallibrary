@@ -90,7 +90,7 @@ class Author(models.Model):
 		return reverse('author-detail', args=[str(self.id)])
 
 	def __str__(self):
-			return f'{self.last_name}, {self.first_name}'
+		return f'{self.last_name}, {self.first_name}'
 
 	class Meta:
 		ordering = ['last_name']
